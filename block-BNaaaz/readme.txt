@@ -1,0 +1,1 @@
+"i am monkey D luffy, and i am gonna be the king of the pirates"
