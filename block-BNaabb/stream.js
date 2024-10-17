@@ -8,10 +8,9 @@ function serverfunction(req, res) {
         store = store + chunk;
     })
     req.on("end", () => {
-        console.log(store)
+        res.write(store);
+        res.end();
     })
-    res.write(store);
-    res.end();
 }
 
 newserver.listen(3456, ()=> {
