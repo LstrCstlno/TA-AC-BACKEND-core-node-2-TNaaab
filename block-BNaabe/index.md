@@ -11,10 +11,23 @@ You are currently inside server.js
 
 Write code to 
 - capture absolute path of `server.js`(itself)
+```js
+let absolutepath = console.log(__dirname + "/server.js")
+```
 - get absolute path of `app.js`
+```js
+let absolutepath = console.log(__dirname + "/app.js")
+```
 - get realtive path of `index.html`
+```js
+var relPath = "./index.html"
+```
 - get absolute path of `index.html` using `path module` 
- 
+```js
+var path = require("path")
+var absPath = path.join(__dirname, "index.html")
+
+```
 #### Capture data on server
 
 Q. Create a server using http
